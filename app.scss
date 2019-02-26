@@ -1,0 +1,61 @@
+@import "@material/button/mdc-button";
+@import "@material/typography/mdc-typography";
+@import "@material/animation/variables";
+@import "@material/animation/functions";
+
+.foo-button {
+  @include mdc-button-ink-color(teal);
+  @include mdc-states(teal);
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header {
+  &--main {
+    display: block;
+    font-size: 6rem;
+    animation-name: fade-in;
+    animation-duration: 4s;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    animation-name: fade-in-bottom;
+    animation-duration: 4s;
+  }
+
+  &--icon {
+    animation-name: fade-in-bottom;
+    animation-duration: 4s;
+  }
+}
