@@ -1,0 +1,43 @@
+.navigation {
+    @include mdc-toolbar-fill-color-accessible($color-primary);
+
+    &__list {
+        list-style: none;
+        color: $color-white;
+    }
+
+    &__item {
+        margin: 1rem;
+        display: inline;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            padding: 0 0.4rem;
+            text-decoration: none;
+            color: $color-white;
+            text-transform: uppercase;
+            transition: color .4s;
+        }
+        &:hover {
+            color: $color-accent;
+        }
+
+    }
+
+    &__social-media {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__icon {
+        margin: 0 1rem;
+        font-size: 2rem;
+        transition: color .4s;
+        &:hover {
+            color: $color-accent;
+        }
+    }
+
+}

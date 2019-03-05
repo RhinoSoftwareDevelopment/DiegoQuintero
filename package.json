@@ -29,6 +29,7 @@
     "@material/animation": "^0.41.0",
     "@material/button": "^0.44.1",
     "@material/ripple": "^0.44.1",
+    "@material/toolbar": "^0.44.1",
     "@material/typography": "^0.44.1",
     "autoprefixer": "^9.4.9",
     "babel-core": "^6.26.3",
@@ -41,7 +42,8 @@
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
-    "webpack": "^3.12.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
   }
 }
