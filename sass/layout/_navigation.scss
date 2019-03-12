@@ -36,8 +36,7 @@
         font-size: 2rem;
         transition: color .4s;
         &:hover {
-            // color: $color-accent;
-            color: greenyellow;
+            color: $color-accent;
         }
     }
 
