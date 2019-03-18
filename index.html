@@ -2,47 +2,39 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Diego Quintero</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./bundle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="mdc-typography">
-
-<header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall navigation">
-    <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-            <div class="navigation__social-media">
-                <i class="navigation__icon fab fa-facebook"></i>
-                <i class="navigation__icon fab fa-instagram"></i>
-                <i class="navigation__icon fab fa-twitter"></i>
-            </div>
-        </section>
-        <section class="mdc-toolbar__section">
-            <span class="mdc-toolbar__title">Quintero Diego</span>
-        </section>
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="#">Obrar</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Conocer</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Contactar</a></li>
-            </ul>
-        </section>
-    </div>
-</header>
-<main class="mdc-toolbar-fixed-adjust">
-    <section class="landing">
-        <img src="./assets/theater-1.jpg" alt="Diego Quintero" class="landing__image">
-    </section>
-</main>
-
-
-    <!-- End Body -->
-    <script src="./bundle.js" async></script>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li><a href="#"><i class="navbar__icon fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="navbar__icon fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="navbar__icon fab fa-twitter"></i></a></li>
+                </ul>
+                <h1 class="navbar__logo">Diego Quinetero</h1>
+                <ul class="navbar__list">
+                    <li><a href="#" class="navbar__link">Conocer</a></li>
+                    <li><a href="#" class="navbar__link">Obrar</a></li>
+                    <li><a href="#" class="navbar__link">Contactar</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section class="langing">
+                <img src="./img/theater-1.jpg" alt="Diego Quintero" class="langing__image">
+            </section>
+        </main>
+    </header>
 </body>
 
 </html>
