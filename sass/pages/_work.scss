@@ -1,0 +1,30 @@
+.work {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  &__element {
+    flex: 25%;
+  }
+
+  &__info {
+      margin: 1rem 0;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: capitalize;
+    color: $color-tertiaty;
+  }
+
+  &__date {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__image {
+      display: block;
+      margin: 0 auto;
+  }
+}

@@ -1,5 +1,5 @@
 header {
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 .navbar {
   position: fixed;
@@ -18,10 +18,14 @@ header {
 
   &__logo {
     color: $color-white;
+    flex: 1 0 auto;
+    text-align: center;
+    letter-spacing: 1.5px;
   }
 
   &__list {
     display: flex;
+    flex: 1;
     list-style: none;
   }
 
@@ -34,10 +38,13 @@ header {
       margin: 0 3rem;
       letter-spacing: 2px;
       color: $color-white;
-      transition: color .4s;
+      transition: color 0.4s;
     }
     &:hover {
-        color: $color-accent;
+      color: $color-accent;
+    }
+    &--active {
+      color: $color-accent !important;
     }
   }
 
@@ -47,9 +54,9 @@ header {
     font-size: 3.2rem;
     color: $color-white;
     cursor: pointer;
-    transition: color .4s;
+    transition: color 0.4s;
     &:hover {
-         color: $color-accent;
-     }
+      color: $color-accent;
+    }
   }
 }
