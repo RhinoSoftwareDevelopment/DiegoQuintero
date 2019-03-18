@@ -1,5 +1,5 @@
 .container {
-  max-width: 120rem;
+  max-width: 155rem;
   width: 90%;
   margin: 0 auto; }
 
@@ -64,9 +64,13 @@ header {
   margin-bottom: 3rem;
   z-index: 100; }
   .navbar__logo {
-    color: #fff; }
+    color: #fff;
+    flex: 1 0 auto;
+    text-align: center;
+    letter-spacing: 1.5px; }
   .navbar__list {
     display: flex;
+    flex: 1;
     list-style: none; }
   .navbar__link:link, .navbar__link:visited {
     text-decoration: none;
@@ -75,16 +79,18 @@ header {
     margin: 0 3rem;
     letter-spacing: 2px;
     color: #fff;
-    transition: color .4s; }
+    transition: color 0.4s; }
   .navbar__link:hover {
     color: #F0A202; }
+  .navbar__link--active {
+    color: #F0A202 !important; }
   .navbar__icon {
     padding: 1rem 0;
     margin: 0 3rem;
     font-size: 3.2rem;
     color: #fff;
     cursor: pointer;
-    transition: color .4s; }
+    transition: color 0.4s; }
     .navbar__icon:hover {
       color: #F0A202; }
 
@@ -93,3 +99,26 @@ header {
   top: 6.4rem;
   left: 0;
   width: 100%; }
+
+.work {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .work__element {
+    flex: 25%; }
+  .work__info {
+    margin: 1rem 0; }
+  .work__title {
+    text-align: center;
+    text-transform: capitalize;
+    color: #1E3231; }
+  .work__date {
+    text-align: center;
+    text-transform: capitalize; }
+  .work__image {
+    display: block;
+    margin: 0 auto;
+    transition: all .2s; }
+    .work__image:hover {
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
