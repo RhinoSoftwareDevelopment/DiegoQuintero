@@ -15,6 +15,10 @@
   },
   "author": "Rhino Software Development",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RhinoSoftwareDevelopment/DiegoQuintero.git"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",

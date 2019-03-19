@@ -53,25 +53,30 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 6.4rem;
   background-color: #8c8c8c;
-  padding: 0 20rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font: 1.6rem;
   margin-bottom: 3rem;
-  z-index: 100; }
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  font-size: 1.4rem; }
+  .navbar__row {
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    display: flex; }
   .navbar__logo {
     color: #fff;
-    flex: 1 0 auto;
+    flex: 1;
     text-align: center;
     letter-spacing: 1.5px; }
   .navbar__list {
     display: flex;
-    flex: 1;
+    justify-content: center;
     list-style: none; }
+  .navbar__section-list {
+    flex: 1; }
   .navbar__link:link, .navbar__link:visited {
     text-decoration: none;
     text-transform: uppercase;
@@ -87,7 +92,7 @@ header {
   .navbar__icon {
     padding: 1rem 0;
     margin: 0 3rem;
-    font-size: 3.2rem;
+    font-size: 3rem;
     color: #fff;
     cursor: pointer;
     transition: color 0.4s; }
