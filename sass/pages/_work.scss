@@ -6,10 +6,16 @@
 
   &__element {
     flex: 25%;
+    cursor: pointer;
   }
 
   &__info {
-      margin: 1rem 0;
+    margin: 1rem 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
   }
 
   &__title {
@@ -24,11 +30,58 @@
   }
 
   &__image {
-      display: block;
-      margin: 0 auto;
-       transition: all .2s;
-      &:hover {
-          box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-      }
+    display: block;
+    margin: 0 auto;
+    transition: all 0.2s;
+    max-width: 30rem;
+    &:hover {
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    }
   }
+}
+
+.description-work {
+  &__video {
+   position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 3rem;
+  }
+
+  &__frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__card {
+    flex: 0 0 20%;
+
+    & img {
+      object-fit: cover;
+      width: 30rem;
+      height: 20rem;
+    }
+  }
+
+  &__credit-title {
+    display: block;
+    color: $color-black;
+    text-transform: capitalize;
+  }
+
+  &__important {
+    // color: $color-secondary;
+    text-transform: capitalize;
+  }
+
 }
