@@ -42,7 +42,8 @@
 
 .description-work {
   &__video {
-   position: relative;
+    position: relative;
+    top: 0;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
@@ -60,11 +61,12 @@
   &__gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    // align-content: center;
+    justify-content: center;
   }
 
   &__card {
-    flex: 0 0 20%;
+    // flex: 0 0 33.33%;
 
     & img {
       object-fit: cover;
@@ -75,13 +77,16 @@
 
   &__credit-title {
     display: block;
-    color: $color-black;
+    font-weight: 700;
+    // color: $color-black;
     text-transform: capitalize;
   }
 
   &__important {
-    // color: $color-secondary;
-    text-transform: capitalize;
+    font-weight: 700;
   }
 
+  &__credits {
+    flex: 50%;
+  }
 }
