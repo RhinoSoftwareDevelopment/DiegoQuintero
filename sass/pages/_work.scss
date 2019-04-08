@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+
 .work {
   display: flex;
   align-items: stretch;
@@ -5,12 +7,22 @@
   flex-wrap: wrap;
 
   &__element {
-    flex: 25%;
+    flex: 100%;
+    position: relative;
     cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: 1rem 5rem 4rem rgba($color-black, 0.4);
+      transform: scaleX(1.01)
+    }
   }
 
   &__info {
-    margin: 1rem 0;
+    color: white;
+    @include absCenter;
+    font-size: 4.5rem;
+    width: 100%;
+    text-align: left;
   }
 
   &__link {
@@ -21,7 +33,6 @@
   &__title {
     text-align: center;
     text-transform: capitalize;
-    color: $color-tertiaty;
   }
 
   &__date {
@@ -30,13 +41,12 @@
   }
 
   &__image {
+    object-fit: fill;
     display: block;
     margin: 0 auto;
-    transition: all 0.2s;
-    max-width: 30rem;
-    &:hover {
-      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
-    }
+    filter: contrast(50%);
+    height: 30rem;
+    width: 100%;
   }
 }
 
@@ -61,13 +71,10 @@
   &__gallery {
     display: flex;
     flex-wrap: wrap;
-    // align-content: center;
     justify-content: center;
   }
 
   &__card {
-    // flex: 0 0 33.33%;
-
     & img {
       object-fit: cover;
       width: 30rem;
@@ -78,7 +85,6 @@
   &__credit-title {
     display: block;
     font-weight: 700;
-    // color: $color-black;
     text-transform: capitalize;
   }
 

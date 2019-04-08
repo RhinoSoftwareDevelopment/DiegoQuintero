@@ -162,27 +162,38 @@ header {
   justify-content: flex-start;
   flex-wrap: wrap; }
   .work__element {
-    flex: 25%;
-    cursor: pointer; }
+    flex: 100%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s; }
+    .work__element:hover {
+      box-shadow: 1rem 5rem 4rem rgba(0, 0, 0, 0.4);
+      transform: scaleX(1.01); }
   .work__info {
-    margin: 1rem 0; }
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    width: 100%;
+    text-align: left; }
   .work__link {
     text-decoration: none;
     color: inherit; }
   .work__title {
     text-align: center;
-    text-transform: capitalize;
-    color: #1E3231; }
+    text-transform: capitalize; }
   .work__date {
     text-align: center;
     text-transform: capitalize; }
   .work__image {
+    object-fit: fill;
     display: block;
     margin: 0 auto;
-    transition: all 0.2s;
-    max-width: 30rem; }
-    .work__image:hover {
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+    filter: contrast(50%);
+    height: 30rem;
+    width: 100%; }
 
 .description-work__video {
   position: relative;
