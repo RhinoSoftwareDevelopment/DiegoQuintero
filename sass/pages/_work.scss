@@ -1,6 +1,7 @@
 @import '../abstracts/mixins';
 
 .work {
+  margin-top: -4rem;
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -36,6 +37,7 @@
   }
 
   &__date {
+    font-size: 2rem;
     text-align: center;
     text-transform: capitalize;
   }

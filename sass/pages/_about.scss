@@ -1,0 +1,68 @@
+.about {
+    margin: 15rem auto;
+    display: flex;
+    justify-content: space-between;
+    &__img {
+        align-self: baseline;
+        position: relative;
+        flex: 0 0 40%;
+        transition: all 0.4s;
+        &:hover {
+            & > * {
+                transition: all 0.4s;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            img {
+                filter: contrast(30%);
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+        
+    }
+    &__txt {
+        // margin-left: 1rem;
+        flex: 0 0 55%;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+
+    &__stats {
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        font-weight: 600;
+        color: $color-black;
+        text-align: center;
+        font-size: 2rem;
+        transition: all 0.2s;
+        @include absCenter;
+    }
+
+    &__link-content {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0 5rem;
+    }
+
+    &__link {
+        flex: 0 0 30%;
+        text-align: center;
+        border: 2px solid $color-black;
+
+        a {
+            display: block;
+            font-size: 3rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s;
+            &:hover {
+                box-shadow: 0 1rem 2rem rgba($color-black,.2);
+            }
+        }
+    }
+}
