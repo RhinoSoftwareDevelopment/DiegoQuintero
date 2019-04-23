@@ -1,0 +1,45 @@
+.evaluations {
+  &__list {
+    list-style: none;
+  }
+
+  &__name {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-black;
+      transition: all 0.4s;
+    }
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.contact {
+  margin-bottom: -4rem;
+  position: relative;
+  height: 100vh;
+  &__info {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+   &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: color 0.4s;
+      color: inherit;
+    }
+    &:hover {
+      color: $color-accent;
+    }
+    &--active {
+      color: $color-accent !important;
+    }
+  }
+}

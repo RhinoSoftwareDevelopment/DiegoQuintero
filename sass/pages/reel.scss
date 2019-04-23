@@ -1,0 +1,15 @@
+.reel {
+    margin-top: -4rem;
+    &__video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+
+        & iframe {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}

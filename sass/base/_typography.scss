@@ -27,6 +27,10 @@ body {
 
 .logo {
   font-family: 'Allerta Stencil', sans-serif;
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .sinopsis {

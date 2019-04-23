@@ -46,6 +46,9 @@ body {
 
 .logo {
   font-family: 'Allerta Stencil', sans-serif; }
+  .logo a {
+    text-decoration: none;
+    color: inherit; }
 
 .sinopsis {
   font-family: 'IM Fell English', serif;
@@ -233,6 +236,10 @@ header {
 .description-work__credits {
   flex: 50%; }
 
+.description-work__cover {
+  margin-top: -4rem;
+  width: 100%; }
+
 .about {
   margin: 15rem auto;
   display: flex;
@@ -290,7 +297,53 @@ header {
   flex-wrap: wrap;
   margin-top: -4rem; }
   .headshots__img {
-    flex: 1 0 25%; }
+    flex: 1 0 25%;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s; }
     .headshots__img img {
-      min-height: 100%;
-      max-width: 100%; }
+      width: 100%;
+      height: 100%; }
+
+.evaluations__list {
+  list-style: none; }
+
+.evaluations__name:link, .evaluations__name:visited {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.4s; }
+
+.evaluations__name:hover {
+  color: #F0A202; }
+
+.contact {
+  margin-bottom: -4rem;
+  position: relative;
+  height: 100vh; }
+  .contact__info {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .contact__link:link, .contact__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.4s;
+    color: inherit; }
+  .contact__link:hover {
+    color: #F0A202; }
+  .contact__link--active {
+    color: #F0A202 !important; }
+
+.reel {
+  margin-top: -4rem; }
+  .reel__video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; }
+    .reel__video-wrapper iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0; }
