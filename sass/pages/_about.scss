@@ -19,7 +19,8 @@
             }
         }
         img {
-            max-width: 100%;
+            // max-width: 100%;
+            width: 100%;
         }
         
     }
@@ -44,13 +45,14 @@
 
     &__link-content {
         display: flex;
-        width: 100%;
+        // width: 100%;
         justify-content: space-around;
-        padding: 0 5rem;
+        // padding: 0 5rem;
     }
 
     &__link {
-        flex: 0 0 30%;
+        margin: 0 .5rem;
+        flex: 1 0 10%;
         text-align: center;
         border: 2px solid $color-black;
 
