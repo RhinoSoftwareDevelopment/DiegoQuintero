@@ -114,7 +114,7 @@ header {
   width: 100%;
   display: flex;
   align-items: stretch;
-  font-size: 1.4rem; }
+  font-size: 1.1rem; }
   .navbar__row {
     flex: 1;
     align-items: center;
@@ -122,23 +122,25 @@ header {
     display: flex; }
   .navbar__logo {
     color: #fff;
-    flex: 1;
+    flex: 0 1 15%;
     text-align: center;
     letter-spacing: 1.5px; }
   .navbar__list {
     display: flex;
     justify-content: center;
-    list-style: none; }
+    list-style: none;
+    align-content: center; }
   .navbar__section-list {
-    flex: 1; }
+    flex: 1 0; }
   .navbar__link:link, .navbar__link:visited {
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem 0;
-    margin: 0 3rem;
+    margin: 0 2rem;
     letter-spacing: 2px;
     color: #fff;
-    transition: color 0.4s; }
+    transition: color 0.4s;
+    display: block; }
   .navbar__link:hover {
     color: #F0A202; }
   .navbar__link--active {

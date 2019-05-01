@@ -12,7 +12,7 @@ header {
   width: 100%;
   display: flex;
   align-items: stretch;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 
   &__row {
     flex: 1;
@@ -23,19 +23,21 @@ header {
   
   &__logo {
     color: $color-white;
-    flex: 1;
+    flex: 0 1 15%;
     text-align: center;
     letter-spacing: 1.5px;
   }
 
   &__list {
     display: flex;
+    // width: 100%;
     justify-content: center;
     list-style: none;
+    align-content: center;
   }
 
   &__section-list {
-    flex: 1;
+    flex: 1 0;
   }
 
   &__link {
@@ -44,10 +46,11 @@ header {
       text-decoration: none;
       text-transform: uppercase;
       padding: 1rem 0;
-      margin: 0 3rem;
+      margin: 0 2rem;
       letter-spacing: 2px;
       color: $color-white;
       transition: color 0.4s;
+      display: block;
     }
     &:hover {
       color: $color-accent;
