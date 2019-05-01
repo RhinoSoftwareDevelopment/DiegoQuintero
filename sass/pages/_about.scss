@@ -68,3 +68,8 @@
         }
     }
 }
+
+.portafolio {
+    width: 100%;
+    @include absCenter;
+}
