@@ -29,6 +29,10 @@
         flex: 0 0 55%;
         font-size: 1.5rem;
         text-align: right;
+
+        & p {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__stats {
@@ -70,6 +74,7 @@
 }
 
 .portafolio {
+    padding: 3rem;
     width: 100%;
     @include absCenter;
 }
