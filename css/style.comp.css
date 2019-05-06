@@ -264,6 +264,8 @@ header {
     flex: 0 0 55%;
     font-size: 1.5rem;
     text-align: right; }
+    .about__txt p {
+      margin-bottom: 1.5rem; }
   .about__stats {
     width: 100%;
     visibility: hidden;
@@ -295,6 +297,7 @@ header {
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .portafolio {
+  padding: 3rem;
   width: 100%;
   position: absolute;
   top: 50%;
